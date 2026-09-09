@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Secrets. The whole point of pillbot/config.py is that keys live here and
+# never in source, so this line is load-bearing.
+.env
+
+# Runtime state: the SQLite database, its WAL/SHM sidecars, the log, and the
+# cached openFDA data. All regenerated on first run.
+*.db
+*.db-wal
+*.db-shm
+*.log
+drugdata_cache.json
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,4 @@
+requests
+pyserial
+pyttsx3
+pytest

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pillbot"
+version = "0.2.0"
+description = "AI-assisted home medication organizer with a deterministic dose-safety gate and a tamper-evident dispense ledger"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["requests", "pyserial", "pyttsx3"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+pillbot = "pillbot.app:main"
+
+[tool.setuptools]
+packages = ["pillbot"]
